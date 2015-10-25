@@ -60,7 +60,6 @@ angular.module('tm.ionic-parse-places-autosuggest', [
               var service = new maps.places.AutocompleteService();
               service.getPlacePredictions({
                 input: searchText,
-                types: ['address'],
                 componentRestrictions: { country: 'au' }
               }, function (predictions, status) {
                 if (status != maps.places.PlacesServiceStatus.OK) {
